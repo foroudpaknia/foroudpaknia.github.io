@@ -4,823 +4,646 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Foroud Paknia | Official Website</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Official website of filmmaker, screenwriter and researcher Foroud Paknia.">
+<title>
+Foroud Paknia | Filmmaker
+</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="description"
+content="Official Website of filmmaker, screenwriter and researcher Foroud Paknia">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<style>
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
 
-body{
-
-background:
-radial-gradient(circle at top,#1a1a1a 0%,#0b0b0b 35%,#050505 100%);
-
-color:#fff;
-
-font-family:Inter,sans-serif;
-
-overflow-x:hidden;
-
-line-height:1.7;
-
-}
-
-a{
-color:inherit;
-text-decoration:none;
-}
-
-header{
-
-position:fixed;
-
-top:0;
-left:0;
-
-width:100%;
-
-padding:22px 7%;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-background:rgba(8,8,8,.72);
-
-backdrop-filter:blur(18px);
-
-border-bottom:1px solid rgba(212,175,55,.18);
-
-transition:.35s;
-
-z-index:1000;
-
-}
-
-.logo{
-
-font-family:"Cormorant Garamond",serif;
-font-size:32px;
-letter-spacing:4px;
-
-}
-
-nav{
-
-display:flex;
-gap:35px;
-
-}
-
-nav a{
-
-position:relative;
-
-font-size:13px;
-
-font-weight:500;
-
-letter-spacing:2px;
-
-padding:8px 0;
-
-color:#e8e8e8;
-
-transition:.35s;
-
-}
-
-nav a:hover{
-
-opacity:1;
-color:#d4af37;
-
-}
-
-.hero{
-
-min-height:100vh;
-
-background:
-linear-gradient(90deg,
-rgba(5,5,5,.82),
-rgba(5,5,5,.55),
-rgba(5,5,5,.82)),
-url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba")
-center center/cover no-repeat;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-padding:140px 8%;
-
-position:relative;
-
-}
-
-.hero::after{
-
-content:"";
-
-position:absolute;
-
-left:0;
-bottom:0;
-
-width:100%;
-height:180px;
-
-background:linear-gradient(to top,#050505,transparent);
-
-}
-
-.hero-content{
-
-display:grid;
-grid-template-columns:350px 1fr;
-gap:90px;
-align-items:center;
-max-width:1300px;
-
-}
-
-.hero img{
-
-width:380px;
-height:520px;
-object-fit:cover;
-
-border-radius:10px;
-
-border:1px solid rgba(212,175,55,.45);
-
-box-shadow:
-0 30px 70px rgba(0,0,0,.55),
-0 0 0 10px rgba(212,175,55,.05);
-
-transition:.45s ease;
-
-}
-
-.hero img:hover{
-
-transform:scale(1.02);
-
-box-shadow:
-0 40px 90px rgba(0,0,0,.7),
-0 0 40px rgba(212,175,55,.18);
-
-}
-
-}
-
-.hero h1{
-
-font-family:"Cormorant Garamond",serif;
-font-size:82px;
-font-weight:600;
-letter-spacing:8px;
-margin-bottom:15px;
-
-}
-
-.hero h1{
-
-font-family:"Cormorant Garamond",serif;
-
-font-size:96px;
-
-font-weight:700;
-
-letter-spacing:12px;
-
-line-height:.95;
-
-text-transform:uppercase;
-
-text-shadow:
-0 5px 18px rgba(0,0,0,.45);
-
-margin-bottom:20px;
-
-}
-
-.hero p{
-
-font-size:19px;
-line-height:2;
-max-width:720px;
-color:#ddd;
-margin-bottom:45px;
-
-}
-
-.buttons{
-
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-
-}
-
-.btn{
-
-padding:16px 38px;
-border:1px solid #d4af37;
-transition:.35s;
-letter-spacing:2px;
-font-size:13px;
-
-}
-
-.btn:hover{
-
-background:#d4af37;
-color:#111;
-
-}
-
-.btn.dark{
-
-border-color:#555;
-
-}
-
-section{
-
-padding:120px 8%;
-max-width:1400px;
-margin:auto;
-
-}
-
-.section-title{
-
-font-family:"Cormorant Garamond",serif;
-font-size:58px;
-margin-bottom:25px;
-letter-spacing:4px;
-
-}
-
-.section-text{
-
-max-width:900px;
-font-size:20px;
-line-height:2;
-color:#cfcfcf;
-
-}
-
-.cards{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:35px;
-margin-top:70px;
-
-}
-
-.card{
-
-position:relative;
-
-padding:42px;
-
-background:linear-gradient(180deg,#111,#0a0a0a);
-
-border:1px solid rgba(212,175,55,.15);
-
-border-radius:14px;
-
-overflow:hidden;
-
-transition:all .4s ease;
-
-}
-
-.card:hover{
-
-transform:translateY(-8px);
-border-color:#d4af37;
-
-}
-
-.card h3{
-
-font-family:"Cormorant Garamond",serif;
-font-size:34px;
-margin-bottom:18px;
-
-}
-
-.card p{
-
-line-height:1.9;
-color:#bbb;
-
-}
-
-@media(max-width:950px){
-
-.hero-content{
-
-grid-template-columns:1fr;
-text-align:center;
-
-}
-
-.hero img{
-
-margin:auto;
-
-}
-
-.hero h1{
-
-font-size:54px;
-
-}
-
-nav{
-
-display:none;
-
-}
-
-.buttons{
-
-justify-content:center;
-
-}
-
-}
-
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
 
 </head>
 
 <body>
 
+<!-- =========================
+HEADER
+========================= -->
+
 <header>
 
-<div class="logo">
-FOROUD PAKNIA
-</div>
+<div class="container navbar">
+
+<a href="index.html"
+class="logo">
+
+FOROUD
+<span>PAKNIA</span>
+
+</a>
 
 <nav>
 
-<a href="#about">ABOUT</a>
+<ul class="menu">
 
-<a href="#films">FILMS</a>
+<li><a href="index.html">Home</a></li>
 
-<a href="#documentaries">DOCUMENTARIES</a>
+<li><a href="about.html">About</a></li>
 
-<a href="#research">RESEARCH</a>
-<a href="awards.html">AWARDS</a>
-<a href="festivals.html">FESTIVALS</a>
-<a href="media.html">MEDIA</a>
-<a href="cv.html">CV</a>
+<li><a href="films.html">Films</a></li>
 
-<a href="#contact">CONTACT</a>
+<li><a href="documentaries.html">Documentaries</a></li>
+
+<li><a href="research.html">Research</a></li>
+
+<li><a href="awards.html">Awards</a></li>
+
+<li><a href="festivals.html">Festivals</a></li>
+
+<li><a href="media.html">Media</a></li>
+
+<li><a href="cv.html">CV</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
 
 </nav>
 
+</div>
+
 </header>
+
+<!-- =========================
+HERO
+========================= -->
 
 <section class="hero">
 
-<div class="hero-content">
+<div class="hero-image"
 
-<img src="foroud-paknia.jpg.jpg" alt="Foroud Paknia">
+style="background-image:url(images/hero/hero.jpg);">
+
+</div>
+
+<div class="hero-overlay"></div>
+
+<div class="container hero-content">
+
+<h1>
+
+Stories Beyond Reality
+
+</h1>
+
+<p>
+
+Filmmaker • Screenwriter • Researcher
+
+</p>
+
+<a href="films.html"
+class="btn">
+
+Explore Films
+
+</a>
+
+</div>
+
+<div class="hero-scroll">
+
+<span>Scroll</span>
+
+</div>
+
+</section>
+
+<!-- =========================
+ABOUT
+========================= -->
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+About
+</h2>
+
+<p class="section-subtitle">
+
+Foroud Paknia is an Iranian filmmaker, screenwriter and researcher whose works explore the intersection of cinema, society and human experience through fiction and documentary storytelling.
+
+</p>
+
+<div class="feature">
+
+<div class="feature-image">
+
+<img src="images/portraits/foroud-paknia.jpg"
+alt="Foroud Paknia">
+
+</div>
+
+<div class="feature-content">
+
+<span class="badge">
+Biography
+</span>
+
+<h2>
+
+Cinema Beyond Boundaries
+
+</h2>
+
+<p>
+
+His artistic activities include directing narrative films, documentary filmmaking, screenplay development and academic research on cinema and artificial intelligence. His projects have been presented in cultural institutions and film festivals while focusing on contemporary social narratives and innovative cinematic language.
+
+</p>
+
+<a href="about.html"
+class="btn">
+
+Read More
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+FEATURED FILMS
+========================= -->
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+
+Featured Films
+
+</h2>
+
+<p class="section-subtitle">
+
+Selected narrative feature film projects.
+
+</p>
+
+<div class="grid grid-3">
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="posters/hotel-dog.jpg"
+alt="Hotel Dog">
+
+</div>
+
+<div class="card-content">
+
+<div class="card-meta">
+
+Feature Film
+
+</div>
+
+<h3 class="card-title">
+
+Hotel Dog
+
+</h3>
+
+<p class="card-text">
+
+Comedy Feature Film.
+
+</p>
+
+<a href="films/hotel-dog.html"
+class="btn">
+
+View
+
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="posters/dayan.jpg"
+alt="Dayan">
+
+</div>
+
+<div class="card-content">
+
+<div class="card-meta">
+
+Feature Film
+
+</div>
+
+<h3 class="card-title">
+
+Dayan
+
+</h3>
+
+<p class="card-text">
+
+Drama Feature Film.
+
+</p>
+
+<a href="films/dayan.html"
+class="btn">
+
+View
+
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="posters/against-the-screenplay.jpg"
+alt="Against the Screenplay">
+
+</div>
+
+<div class="card-content">
+
+<div class="card-meta">
+
+Feature Film
+
+</div>
+
+<h3 class="card-title">
+
+Against the Screenplay
+
+</h3>
+
+<p class="card-text">
+
+Meta Cinema Project.
+
+</p>
+
+<a href="films/against-the-screenplay.html"
+class="btn">
+
+View
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+
+Featured Documentaries
+
+</h2>
+
+<p class="section-subtitle">
+
+Documentary films and ongoing projects.
+
+</p>
+
+<div class="grid grid-2">
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="posters/falak-ol-aflak.jpg"
+alt="Falak ol Aflak">
+
+</div>
+
+<div class="card-content">
+
+<div class="card-meta">
+
+Documentary
+
+</div>
+
+<h3 class="card-title">
+
+Falak ol Aflak
+
+</h3>
+
+<p class="card-text">
+
+A cinematic journey through the memory of Zagros.
+
+</p>
+
+<a href="documentaries/falak-ol-aflak.html"
+class="btn">
+
+View
+
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="posters/the-last-path.jpg"
+alt="The Last Path">
+
+</div>
+
+<div class="card-content">
+
+<div class="card-meta">
+
+Documentary
+
+</div>
+
+<h3 class="card-title">
+
+The Last Path
+
+</h3>
+
+<p class="card-text">
+
+Feature Documentary Project.
+
+</p>
+
+<a href="documentaries/the-last-path.html"
+class="btn">
+
+View
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+
+Research
+
+</h2>
+
+<p class="section-subtitle">
+
+Research projects on cinema, artificial intelligence, screenwriting and cultural studies.
+
+</p>
+
+<div class="grid grid-3">
+
+<div class="card">
+
+<div class="card-content">
+
+<div class="card-meta">
+
+Research
+
+</div>
+
+<h3 class="card-title">
+
+Cinema & Artificial Intelligence
+
+</h3>
+
+<p class="card-text">
+
+A strategic roadmap for integrating artificial intelligence into Iranian cinema.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<div class="card-meta">
+
+Book
+
+</div>
+
+<h3 class="card-title">
+
+Film Studies
+
+</h3>
+
+<p class="card-text">
+
+Academic publications and research on contemporary cinema.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<div class="card-meta">
+
+Conference
+
+</div>
+
+<h3 class="card-title">
+
+Screenwriting Research
+
+</h3>
+
+<p class="card-text">
+
+Studies on narrative structure, adaptation and dramatic writing.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+
+Awards & Festivals
+
+</h2>
+
+<p class="section-subtitle">
+
+Official selections, awards and international participation.
+
+</p>
+
+<a href="awards.html" class="btn">
+
+View Awards
+
+</a>
+
+<a href="festivals.html" class="btn" style="margin-left:20px;">
+
+Festivals
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
 
 <div>
 
-<h1>FOROUD PAKNIA</h1>
+<h3 class="footer-title">
 
-<div style="width:90px;height:2px;background:#d4af37;margin:25px 0;"></div>
-
-<h2>
-Filmmaker • Screenwriter • Documentary Director • Researcher
-</h2>
-
-<p>
-
-Award-winning filmmaker and researcher dedicated to creating feature films, documentaries and cinematic narratives that connect history, culture and contemporary human experience.
-
-</p>
-
-<p style="margin-top:18px;color:#9d9d9d;font-size:16px;letter-spacing:2px;">
-
-Feature Films • Documentary Cinema • Film Research • Cultural Heritage
-
-</p>
-
-<div class="buttons">
-
-<a class="btn" href="#films">
-FEATURE FILMS
-</a>
-
-<a class="btn dark" href="#documentaries">
-DOCUMENTARIES
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<section id="about">
-
-<h2 class="section-title">ABOUT</h2>
-
-<p class="section-text">
-
-Foroud Paknia is an Iranian filmmaker, screenwriter, university lecturer and researcher. He holds a Ph.D. in Public Relations and Media Management, an M.A. in Dramatic Literature and a B.A. in Film Directing. He is a member of the ISFA Jury Academy (Iranian Alliance of Motion Picture Guilds) and the Iranian Academy of Arts and Cinematic Techniques. His films have been screened at numerous international festivals across Germany, Japan, Italy, Canada, Australia, Portugal, India and other countries. In 2025, he received the Postdoctoral Research Award in Arts from College Futurale, Canada.
-
-</p>
-
-</section>
-
-<section id="films">
-
-<h2 <h2 class="section-title">FEATURE FILMS</h2>
-
-<p class="section-text">
-Selected narrative feature films written and directed by Foroud Paknia, exploring human experience, memory, identity and contemporary society.
-</p>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Baran Nemigirad</h3>
-
-<p>
-<b>Year:</b> 2025<br>
-Feature Film
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Dayan</h3>
-
-<p>
-<b>Year:</b> 2017<br>
-Feature Film
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>The Night Tree</h3>
-
-<p>
-<b>Year:</b> 2008<br>
-Feature Film
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>The Seat by the Window</h3>
-
-<p>
-<b>Year:</b> 2007<br>
-Feature Film
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>This Cradle Will Rock</h3>
-
-<p>
-<b>Year:</b> 2002<br>
-Feature Film
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Something Like Life</h3>
-
-<p>
-<b>Year:</b> 2001<br>
-Feature Film
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Green Frame</h3>
-
-<p>
-<b>Year:</b> 2000<br>
-Feature Film
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="documentaries">
-
-<h2 class="section-title">DOCUMENTARIES</h2>
-
-<p class="section-text">
-Documentary films exploring history, cultural heritage, identity and contemporary society through cinematic storytelling.
-</p>
-
-<div class="cards">
-
-<div class="card">
-<h3>Dolatou's Sad Anthem</h3>
-<p><b>Documentary Film</b></p>
-</div>
-
-<div class="card">
-<h3>The Prison Doctor of Dolatou</h3>
-<p><b>Documentary Film</b></p>
-</div>
-
-<div class="card">
-<h3>Silent Mountain</h3>
-<p><b>Documentary Film</b></p>
-</div>
-
-<div class="card">
-<h3>Unfinished Flights</h3>
-<p><b>Documentary Film</b></p>
-</div>
-
-<div class="card">
-<h3>Shortness of Breath</h3>
-<p><b>Documentary Film</b></p>
-</div>
-
-<div class="card">
-<h3>Twilight of the Sinai Desert</h3>
-<p><b>Documentary Film</b></p>
-</div>
-
-<div class="card">
-<h3>Our Little Group</h3>
-<p><b>Documentary Film</b></p>
-</div>
-
-<div class="card">
-<h3>Sometimes I Miss Myself</h3>
-<p><b>Documentary Film</b></p>
-</div>
-
-<div class="card">
-<h3>Seven Mountains of Desire</h3>
-<p><b>Documentary Film</b></p>
-</div>
-
-</div>
-<div class="card">
-<h3>The Last Path</h3>
-<p>
-A feature documentary exploring humanity, endurance and the meaning of the final journey.
-</p>
-</div>
-
-<div class="card">
-<h3>New Documentary Projects</h3>
-<p>
-Documentary productions focusing on culture, archaeology, history and social narratives.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="research">
-
-<h2 class="section-title">RESEARCH & EDUCATION</h2>
-
-<p class="section-text">
-Academic research, university teaching and interdisciplinary studies in cinema, media and visual storytelling.
-</p>
-
-<div class="cards">
-
-<div class="card">
-<h3>Education</h3>
-
-<p>
-
-Ph.D. in Public Relations & Media Management<br><br>
-
-M.A. in Dramatic Literature<br><br>
-
-B.A. in Film Directing
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Research</h3>
-
-<p>
-
-Postdoctoral Research Award in Arts (2025)<br><br>
-
-Research on cinema, media, artificial intelligence and visual storytelling.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Professional Memberships</h3>
-
-<p>
-
-ISFA Jury Academy<br><br>
-
-Iranian Academy of Arts & Cinematic Techniques<br><br>
-
-University Lecturer
-
-</p>
-
-</div>
-
-</div>
-
-<div class="card">
-<h3>Film Studies</h3>
-<p>
-Research in visual storytelling, screenplay structure and cinematic language.
-</p>
-</div>
-
-<div class="card">
-<h3>Cultural Heritage</h3>
-<p>
-Projects connecting cinema with history, archaeology and cultural identity.
-</p>
-</div>
-
-</div>
-
-</section>
-<section id="awards">
-
-<h2 class="section-title">AWARDS & RECOGNITION</h2>
-
-<p class="section-text">
-Selected awards and professional recognitions received for filmmaking and academic research.
-</p>
-
-<div class="cards">
-
-<div class="card">
-<h3>2025</h3>
-<p>
-Postdoctoral Research Award in Arts<br>
-College Futurale, Canada
-</p>
-</div>
-
-<div class="card">
-<h3>Cinema Verite</h3>
-<p>
-Golden Pen Award<br>
-Special Jury Award
-</p>
-</div>
-
-<div class="card">
-<h3>International Awards</h3>
-<p>
-Bergamo (Italy)<br>
-Tokyo (Japan)<br>
-Prix Danube
-</p>
-</div>
-
-<div class="card">
-<h3>National Awards</h3>
-<p>
-Roshd Film Festival<br>
-Women's Film Festival<br>
-Sama Film Festival<br>
-Red Gold Festival
-</p>
-</div>
-
-</div>
-
-</section>
-<section id="contact">
-
-<h2 class="section-title">CONTACT</h2>
-
-<p class="section-text">
-
-For collaborations, film productions, festival invitations and research partnerships, please get in touch.
-
-</p>
-
-<div class="buttons" style="margin-top:50px;">
-
-<a class="btn" href="mailto:info@foroudpaknia.com">
-EMAIL
-</a>
-
-<a class="btn dark" href="#">
-DOWNLOAD CV
-</a>
-
-</div>
-
-</section>
-<footer style="padding:70px 8%;border-top:1px solid #222;text-align:center;">
-
-<h2 style="font-family:'Cormorant Garamond',serif;font-size:42px;letter-spacing:4px;margin-bottom:15px;">
 FOROUD PAKNIA
-</h2>
 
-<p style="color:#999;letter-spacing:2px;margin-bottom:30px;">
-Filmmaker • Screenwriter • Researcher
+</h3>
+
+<p>
+
+Official website of filmmaker, screenwriter and researcher.
+
 </p>
 
-<p style="color:#666;font-size:14px;">
+</div>
+
+<div>
+
+<h3 class="footer-title">
+
+Navigation
+
+</h3>
+
+<div class="footer-links">
+
+<a href="about.html">About</a>
+
+<a href="films.html">Films</a>
+
+<a href="documentaries.html">Documentaries</a>
+
+<a href="research.html">Research</a>
+
+</div>
+
+</div>
+
+<div>
+
+<h3 class="footer-title">
+
+Contact
+
+</h3>
+
+<div class="footer-links">
+
+<a href="contact.html">
+
+Contact Page
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
 © 2026 Foroud Paknia. All Rights Reserved.
-</p>
+
+</div>
+
+</div>
 
 </footer>
-
-<script>
-
-const observer=new IntersectionObserver((entries)=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-entry.target.animate([
-
-{opacity:0,transform:"translateY(40px)"},
-
-{opacity:1,transform:"translateY(0)"}
-
-],{
-
-duration:900,
-
-fill:"forwards",
-
-easing:"ease"
-
-});
-
-}
-
-});
-
-});
-
-document.querySelectorAll("section,.card").forEach(el=>observer.observe(el));
-
-</script>
 
 </body>
 
