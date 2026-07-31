@@ -1168,3 +1168,8 @@ color:#c9a96a;
 .language-switch span{
 color:#666;
 }
+.hero-image{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
