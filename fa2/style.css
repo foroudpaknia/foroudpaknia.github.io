@@ -92,7 +92,8 @@ overflow:hidden;
 .hero-image{
     position:absolute;
     inset:0;
-    background:url("hero.jpg.jpg") center center/cover no-repeat;
+    background:url("hero.jpg.jpg") center top/contain no-repeat;
+    background-color:#000;
 }
 
 
