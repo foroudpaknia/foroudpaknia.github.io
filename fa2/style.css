@@ -487,3 +487,22 @@ margin-bottom:15px;
     }
 
 }
+.film-card{
+    background:#111;
+    color:#fff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.film-card h2{
+    color:#fff;
+}
+
+.film-card p{
+    color:#ddd;
+}
+
+.film-card span{
+    color:#d4af37;
+}
