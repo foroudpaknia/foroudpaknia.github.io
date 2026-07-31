@@ -88,14 +88,11 @@ text-align:center;
 overflow:hidden;
 }
 
-
 .hero-image{
     position:absolute;
     inset:0;
-    background:url("hero.jpg.jpg") center top/contain no-repeat;
-    background-color:#000;
+    background:url("hero.jpg.jpg") center 20% / cover no-repeat;
 }
-
 
 .hero-overlay{
 position:absolute;
