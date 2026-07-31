@@ -1136,3 +1136,35 @@ padding:22px;
 END OF STYLE.CSS
 Version 2.0
 ==========================*/
+/* =========================
+LANGUAGE SWITCH
+========================= */
+
+.language-switch{
+display:flex;
+align-items:center;
+gap:8px;
+margin-left:30px;
+font-size:14px;
+font-weight:600;
+}
+
+.language-switch a{
+color:#ffffff;
+text-decoration:none;
+opacity:.7;
+transition:.3s;
+}
+
+.language-switch a:hover{
+opacity:1;
+}
+
+.language-switch a.active{
+opacity:1;
+color:#c9a96a;
+}
+
+.language-switch span{
+color:#666;
+}
