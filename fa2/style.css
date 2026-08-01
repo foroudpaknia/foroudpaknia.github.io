@@ -1212,3 +1212,45 @@ max-width:300px;
     color:#ddd;
     font-size:16px;
 }
+/* ==========================
+   AWARDS FINAL FIX
+========================== */
+
+.awards-list{
+    max-width:1000px;
+    margin:60px auto;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+
+.award-item{
+    background:#151515 !important;
+    color:#fff;
+    border:1px solid #2d2d2d;
+    padding:30px;
+    border-radius:18px;
+    text-align:right;
+}
+
+
+.award-item h2{
+    color:#d4af37 !important;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+
+.award-item p{
+    color:#ddd !important;
+    font-size:17px;
+    line-height:2;
+    margin:0;
+}
+
+
+.award-item:hover{
+    border-color:#d4af37;
+    transform:translateY(-5px);
+}
