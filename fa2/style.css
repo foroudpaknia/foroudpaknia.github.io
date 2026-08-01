@@ -1173,3 +1173,42 @@ max-width:300px;
 }
 
 }
+/* ==========================
+   AWARDS PAGE
+========================== */
+
+.awards-list{
+    max-width:1000px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+
+.award-item{
+    background:#151515;
+    border:1px solid #2d2d2d;
+    padding:25px 30px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+
+.award-item:hover{
+    border-color:#d4af37;
+    transform:translateY(-5px);
+}
+
+
+.award-item h2{
+    color:#d4af37;
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+
+.award-item p{
+    color:#ddd;
+    font-size:16px;
+}
