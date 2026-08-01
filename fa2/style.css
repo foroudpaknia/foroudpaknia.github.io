@@ -1425,3 +1425,51 @@ body{
 .awards-page p {
     background:none !important;
 }
+/* ===== CV Page ===== */
+
+.cv-section,
+.filmography-section,
+.screenplays-section{
+    padding:50px;
+    margin:40px auto;
+    max-width:1000px;
+    background:#ffffff;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.cv-section h1{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.cv-section h2,
+.filmography-section h2,
+.screenplays-section h2{
+    margin-top:35px;
+    color:#222;
+}
+
+.filmography-section h3{
+    margin-top:30px;
+    color:#555;
+}
+
+.cv-section p,
+.cv-section li,
+.filmography-section li,
+.screenplays-section li{
+    line-height:2;
+    font-size:17px;
+}
+
+.cv-section ul,
+.filmography-section ul,
+.screenplays-section ul{
+    padding-right:25px;
+}
+
+.screenplays-section li,
+.filmography-section li{
+    margin-bottom:20px;
+}
