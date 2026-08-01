@@ -886,3 +886,40 @@ body{
     flex-direction:column;
     justify-content:center;
 }
+/* FINAL FILMS GRID FIX */
+
+.films-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    align-items:start;
+}
+
+.film-card{
+    background:#151515 !important;
+    border-radius:18px;
+    overflow:hidden;
+    padding:0 !important;
+    height:auto !important;
+    min-height:0 !important;
+    display:block !important;
+}
+
+.film-card img{
+    width:100% !important;
+    height:260px !important;
+    object-fit:cover !important;
+    display:block;
+}
+
+.film-info{
+    padding:20px !important;
+}
+
+.film-card h2{
+    color:#d4af37 !important;
+}
+
+.film-card p{
+    color:#ddd !important;
+}
