@@ -1570,3 +1570,41 @@ strong {
     list-style:none;
     line-height:2;
 }
+/* ===== CV FINAL FIX ===== */
+
+.cv-section,
+.filmography-section,
+.screenplays-section,
+.awards-section{
+    background:#151515 !important;
+    color:#fff !important;
+}
+
+
+.cv-section h1{
+    color:#d4af37 !important;
+}
+
+
+.cv-section h2,
+.filmography-section h2,
+.screenplays-section h2,
+.awards-section h2{
+    color:#d4af37 !important;
+}
+
+
+.cv-section p,
+.cv-section li,
+.filmography-section li,
+.screenplays-section li,
+.awards-section li{
+    color:#ddd !important;
+}
+
+
+.filmography-section li,
+.screenplays-section li,
+.awards-section li{
+    background:#222 !important;
+}
