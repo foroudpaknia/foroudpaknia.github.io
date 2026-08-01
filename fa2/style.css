@@ -539,3 +539,42 @@ margin-bottom:15px;
     position:relative;
     z-index:10;
 }
+/* ===== Hero Animation ===== */
+
+.hero-content{
+    animation: fadeUp 1.5s ease forwards;
+    opacity:0;
+}
+
+
+.hero-image{
+    animation: zoomIn 2s ease forwards;
+}
+
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+@keyframes zoomIn{
+
+    from{
+        transform:scale(1.08);
+    }
+
+    to{
+        transform:scale(1);
+    }
+
+}
