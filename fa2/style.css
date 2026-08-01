@@ -829,11 +829,27 @@ body{
 }
 /* FIX FILMS CARDS SIZE */
 
+/* Films cards balanced size */
+
+.films-grid{
+    align-items:start;
+}
+
 .film-card{
-    min-height:520px;
+    min-height:0;
+    height:auto;
     display:flex;
     flex-direction:column;
-    justify-content:flex-start;
+}
+
+.film-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.film-info{
+    padding:20px;
 }
 
 .film-card img{
