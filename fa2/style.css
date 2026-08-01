@@ -1301,3 +1301,48 @@ body{
     background:#151515 !important;
     color:#fff !important;
 }
+/* ==========================
+   AWARDS PAGE FINAL STYLE
+========================== */
+
+.awards-list{
+    width:90%;
+    max-width:1000px;
+    margin:60px auto;
+}
+
+
+.award-item{
+    background:#151515 !important;
+    border:1px solid #333 !important;
+    padding:30px !important;
+    margin-bottom:25px;
+    border-radius:18px;
+    text-align:right;
+}
+
+
+.award-item h2{
+    color:#d4af37 !important;
+    font-size:24px !important;
+    margin-bottom:15px;
+}
+
+
+.award-item p{
+    color:#ddd !important;
+    font-size:17px !important;
+    line-height:2 !important;
+}
+
+
+/* جلوگیری از سفید شدن پس زمینه */
+
+.works{
+    background:#090909 !important;
+}
+
+
+.awards-list{
+    background:#090909 !important;
+}
