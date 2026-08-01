@@ -1254,3 +1254,50 @@ max-width:300px;
     border-color:#d4af37;
     transform:translateY(-5px);
 }
+/* ==========================
+   AWARDS PAGE FORCE FIX
+========================== */
+
+body{
+    background:#090909;
+}
+
+
+.awards-list,
+.awards-list *{
+    box-sizing:border-box;
+}
+
+
+.awards-list{
+    background:#090909 !important;
+}
+
+
+.award-item{
+    background:#151515 !important;
+    color:#ffffff !important;
+    border:1px solid #2d2d2d !important;
+    padding:30px !important;
+    border-radius:18px !important;
+}
+
+
+.award-item h2{
+    color:#d4af37 !important;
+}
+
+
+.award-item p{
+    color:#dddddd !important;
+}
+
+
+/* حذف اثر کارت‌های قدیمی */
+
+.awards-list .card,
+.awards-list .card p,
+.awards-list .card h2{
+    background:#151515 !important;
+    color:#fff !important;
+}
