@@ -827,3 +827,22 @@ body{
     padding:0 !important;
     background:none !important;
 }
+/* FIX FILMS CARDS SIZE */
+
+.film-card{
+    min-height:520px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+
+.film-card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.film-info{
+    padding:25px;
+    flex:1;
+}
