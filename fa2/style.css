@@ -661,3 +661,24 @@ margin-bottom:15px;
     background-size:cover;
     background-repeat:no-repeat;
 }
+.film-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.film-card:hover{
+    transform:translateY(-8px);
+}
+
+.film-card img{
+    width:100%;
+    height:380px;
+    object-fit:cover;
+}
+
+.film-info{
+    padding:25px;
+}
