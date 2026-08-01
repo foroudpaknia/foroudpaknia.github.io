@@ -766,3 +766,12 @@ body{
     background:#090909;
     color:#fff;
 }
+/* isolate home image */
+
+.hero-content img{
+    width:320px !important;
+    height:360px !important;
+    object-fit:cover !important;
+    border-radius:20px !important;
+    border:4px solid #d4af37 !important;
+}
