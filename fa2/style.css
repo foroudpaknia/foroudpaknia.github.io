@@ -1131,3 +1131,45 @@ max-width:300px;
 }
 
 }
+/* ==========================
+   ABOUT TEXT ALIGN FIX
+========================== */
+
+.about-text{
+    text-align:right;
+    direction:rtl;
+    max-width:650px;
+}
+
+.about-text h2{
+    text-align:right;
+}
+
+.about-text p{
+    text-align:justify;
+    line-height:2.2;
+    margin-bottom:25px;
+}
+
+
+/* تنظیم فاصله ستون‌ها */
+
+.about-container{
+    align-items:flex-start;
+}
+
+
+/* موبایل */
+
+@media(max-width:900px){
+
+.about-text{
+    text-align:right;
+    width:100%;
+}
+
+.about-text p{
+    text-align:justify;
+}
+
+}
