@@ -526,3 +526,13 @@ margin-bottom:15px;
     width:85%;
     max-width:1200px;
 }
+.hero-content img{
+    width:320px;
+    height:360px;
+    object-fit:cover;
+    object-position:center top;
+    border-radius:20px;
+    border:4px solid #d4af37;
+    position:relative;
+    z-index:10;
+}
