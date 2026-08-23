@@ -266,8 +266,7 @@ nav a.active {
    HERO BACKGROUND
 ========================================================= */
 
-.hero-image {
-
+.hero-background
     position: absolute;
 
     inset: 0;
