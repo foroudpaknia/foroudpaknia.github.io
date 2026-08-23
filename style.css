@@ -136,9 +136,11 @@ nav {
 
     justify-content: center;
 
-    gap: 24px;
+    gap: 30px;
 
     flex: 1;
+
+    margin: 0 25px;
 }
 
 
@@ -264,7 +266,7 @@ nav a.active {
    HERO BACKGROUND
 ========================================================= */
 
-.hero-background {
+.hero-image {
 
     position: absolute;
 
@@ -284,7 +286,6 @@ nav a.active {
     animation:
         heroZoom 12s ease-out forwards;
 }
-
 
 /* =========================================================
    HERO OVERLAY
@@ -317,7 +318,7 @@ nav a.active {
 
     z-index: 5;
 
-    width: min(88%, 1180px);
+    width: min(84%, 1180px);
 
     margin: 0 auto;
 
@@ -331,13 +332,13 @@ nav a.active {
 
     align-items: center;
 
-    gap: 80px;
+    gap: 90px;
 
     animation:
         heroFade 1.2s ease forwards;
 }
 
-
+  
 /* =========================================================
    HERO TEXT
 ========================================================= */
@@ -350,11 +351,10 @@ nav a.active {
 
     justify-self: end;
 
-    padding-right: 0;
+    padding-right: 25px;
 
     text-align: right;
 }
-
 
 .hero-line {
 
@@ -427,7 +427,7 @@ nav a.active {
 
     width: 100%;
 
-    max-width: 400px;
+    max-width: 380px;
 
     aspect-ratio: 4 / 5;
 
