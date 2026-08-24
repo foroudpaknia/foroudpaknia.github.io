@@ -1346,3 +1346,23 @@ footer p {
         transition-duration: .01ms !important;
     }
 }
+/* =========================================================
+   PERSIAN HOMEPAGE HERO
+   PORTRAIT RIGHT / TEXT LEFT
+========================================================= */
+
+.fa-hero-content {
+    direction: ltr;
+}
+
+.fa-hero-content .hero-text {
+    direction: rtl;
+    justify-self: start;
+    text-align: right;
+    order: 1;
+}
+
+.fa-hero-content .hero-portrait {
+    justify-self: end;
+    order: 2;
+}
