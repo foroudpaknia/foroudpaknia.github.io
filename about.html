@@ -58,20 +58,24 @@
 
 .about-gallery-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
+    align-items: start;
 }
 
 .about-gallery-item {
     overflow: hidden;
     border-radius: 4px;
-    background: #eee;
+    background: transparent;
+    line-height: 0;
 }
 
 .about-gallery-item img {
     display: block;
     width: 100%;
     height: auto;
+    max-width: 100%;
+    object-fit: contain;
     transition: transform 0.5s ease;
 }
 
@@ -213,26 +217,26 @@ alt="فرود پاک‌نیا - Foroud Paknia">
 
 <div class="about-gallery-item">
 <img src="foroud.webp"
-     alt="فرود پاک‌نیا - Foroud Paknia"
-     loading="lazy">
+alt="فرود پاک‌نیا - Foroud Paknia"
+loading="lazy">
 </div>
 
 <div class="about-gallery-item">
 <img src="foroud1.webp"
-     alt="فرود پاک‌نیا - Foroud Paknia"
-     loading="lazy">
+alt="فرود پاک‌نیا - Foroud Paknia"
+loading="lazy">
 </div>
 
 <div class="about-gallery-item">
 <img src="foroud3.webp"
-     alt="فرود پاک‌نیا - Foroud Paknia"
-     loading="lazy">
+alt="فرود پاک‌نیا - Foroud Paknia"
+loading="lazy">
 </div>
 
 <div class="about-gallery-item">
 <img src="foroud4.webp"
-     alt="فرود پاک‌نیا - Foroud Paknia"
-     loading="lazy">
+alt="فرود پاک‌نیا - Foroud Paknia"
+loading="lazy">
 </div>
 
 </div>
@@ -286,6 +290,7 @@ alt="فرود پاک‌نیا - Foroud Paknia">
 
 </section>
 
+
 <section class="vision">
 
 <div class="container">
@@ -307,6 +312,7 @@ alt="فرود پاک‌نیا - Foroud Paknia">
 </div>
 
 </section>
+
 
 <footer>
 
