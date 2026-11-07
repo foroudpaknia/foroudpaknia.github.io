@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 
@@ -62,8 +63,11 @@
 
 
     <link rel="stylesheet" href="style.css">
-<script data-goatcounter="https://foroudpaknia.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+
+    <!-- GoatCounter: آمارگیری بازدیدها -->
+
+    <script data-goatcounter="https://foroudpaknia.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
 
     <!-- Schema.org -->
 
@@ -198,7 +202,7 @@
     <div class="hero-overlay"></div>
 
 
-<div class="hero-content fa-hero-content">
+    <div class="hero-content fa-hero-content">
 
         <div class="hero-text">
 
@@ -216,12 +220,13 @@
                 کارگردان، نویسنده، مستندساز، پژوهشگر و مدرس سینما
             </p>
 
-<a href="https://www.instagram.com/foroud.paknia/"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="instagram-link">
-    Instagram
-</a>
+            <a href="https://www.instagram.com/foroud.paknia/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="instagram-link">
+                Instagram
+            </a>
+
         </div>
 
 
@@ -242,6 +247,78 @@
 
 
 </main>
+
+
+<!-- شمارنده مجموع بازدیدهای سایت -->
+
+<div id="site-visit-counter"
+     style="
+        direction: rtl;
+        text-align: center;
+        margin: 30px auto;
+        padding: 14px 22px;
+        width: fit-content;
+        max-width: calc(100% - 40px);
+        color: #d4af37;
+        background: #111;
+        border: 1px solid #d4af37;
+        border-radius: 8px;
+        font-size: 14px;
+     ">
+
+    مجموع بازدیدهای سایت:
+
+    <strong id="site-total-visits"
+            style="color: #ffffff; margin-right: 8px;">
+        در حال دریافت...
+    </strong>
+
+</div>
+
+
+<script>
+
+(function () {
+
+    var target = document.getElementById('site-total-visits');
+
+    var attempts = 0;
+
+    var timer = setInterval(function () {
+
+        attempts++;
+
+        if (window.goatcounter && window.goatcounter.visit_count) {
+
+            clearInterval(timer);
+
+            target.textContent = '';
+
+            window.goatcounter.visit_count({
+
+                append: '#site-total-visits',
+
+                path: 'TOTAL'
+
+            });
+
+        }
+
+        if (attempts >= 50) {
+
+            clearInterval(timer);
+
+            if (target.textContent === 'در حال دریافت...') {
+                target.textContent = '—';
+            }
+
+        }
+
+    }, 100);
+
+})();
+
+</script>
 
 
 </body>
