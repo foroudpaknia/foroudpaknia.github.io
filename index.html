@@ -63,7 +63,11 @@
 
 
     <link rel="stylesheet" href="style.css">
-
+<script
+    data-goatcounter="https://foroudpaknia.goatcounter.com/count"
+    async
+    src="//gc.zgo.at/count.js">
+</script>
     <!-- GoatCounter: آمارگیری بازدیدها -->
 
     <script data-goatcounter="https://foroudpaknia.goatcounter.com/count"
@@ -322,5 +326,42 @@
 
 
 </body>
+<div id="site-visit-counter"
+     style="direction:rtl; text-align:center; margin:30px auto;
+            padding:14px 22px; width:fit-content;
+            color:#d4af37; background:#111;
+            border:1px solid #d4af37; border-radius:8px;">
 
+    مجموع بازدیدهای سایت:
+    <span id="site-total-visits" style="color:white; margin-right:8px;">
+        در حال دریافت...
+    </span>
+</div>
+
+<script>
+(function () {
+    var target = document.getElementById('site-total-visits');
+    var attempts = 0;
+
+    var timer = setInterval(function () {
+        attempts++;
+
+        if (window.goatcounter && window.goatcounter.visit_count) {
+            clearInterval(timer);
+
+            window.goatcounter.visit_count({
+                append: '#site-total-visits',
+                path: 'TOTAL'
+            });
+        }
+
+        if (attempts >= 50) {
+            clearInterval(timer);
+            if (target.textContent.trim() === 'در حال دریافت...') {
+                target.textContent = 'خطا در دریافت';
+            }
+        }
+    }, 100);
+})();
+</script>
 </html>
