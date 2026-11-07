@@ -34,6 +34,7 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fa_IR">
     <meta property="og:site_name" content="Foroud Paknia">
+
     <meta property="og:url"
           content="https://foroudpaknia.github.io/">
 
@@ -45,7 +46,6 @@
 
     <meta property="og:image"
           content="https://foroudpaknia.github.io/hero.jpg.jpg">
-
 
     <!-- Twitter -->
 
@@ -61,17 +61,15 @@
     <meta name="twitter:image"
           content="https://foroudpaknia.github.io/hero.jpg.jpg">
 
-
     <link rel="stylesheet" href="style.css">
-<script
-    data-goatcounter="https://foroudpaknia.goatcounter.com/count"
-    async
-    src="//gc.zgo.at/count.js">
-</script>
+
     <!-- GoatCounter: آمارگیری بازدیدها -->
 
-    <script data-goatcounter="https://foroudpaknia.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
+    <script
+        data-goatcounter="https://foroudpaknia.goatcounter.com/count"
+        async
+        src="//gc.zgo.at/count.js">
+    </script>
 
     <!-- Schema.org -->
 
@@ -121,21 +119,41 @@
     }
     </script>
 
+    <!-- استایل شمارنده -->
+
+    <style>
+        #site-visit-counter {
+            direction: rtl;
+            text-align: center;
+            margin: 30px auto;
+            padding: 14px 22px;
+            width: fit-content;
+            max-width: calc(100% - 40px);
+            color: #d4af37;
+            background: #111;
+            border: 1px solid #d4af37;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        #site-total-visits {
+            color: #ffffff;
+            margin-right: 8px;
+            font-weight: bold;
+        }
+    </style>
+
 </head>
 
-
 <body>
-
 
 <header>
 
     <div class="navbar">
 
-
         <a href="index.html" class="logo">
             فرود <span>پاک‌نیا</span>
         </a>
-
 
         <nav>
 
@@ -173,7 +191,6 @@
 
         </nav>
 
-
         <div class="language-switch">
 
             <a href="index.html" class="active">
@@ -188,180 +205,112 @@
 
         </div>
 
-
     </div>
 
 </header>
 
-
-
 <main>
 
+    <section class="hero">
 
-<section class="hero">
+        <div class="hero-background"></div>
 
+        <div class="hero-overlay"></div>
 
-    <div class="hero-background"></div>
+        <div class="hero-content fa-hero-content">
 
-    <div class="hero-overlay"></div>
+            <div class="hero-text">
 
+                <div class="hero-line"></div>
 
-    <div class="hero-content fa-hero-content">
+                <h1>
+                    فرود پاک‌نیا
+                </h1>
 
-        <div class="hero-text">
+                <h2>
+                    Foroud Paknia
+                </h2>
 
-            <div class="hero-line"></div>
+                <p>
+                    کارگردان، نویسنده، مستندساز، پژوهشگر و مدرس سینما
+                </p>
 
-            <h1>
-                فرود پاک‌نیا
-            </h1>
+                <a href="https://www.instagram.com/foroud.paknia/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="instagram-link">
+                    Instagram
+                </a>
 
-            <h2>
-                Foroud Paknia
-            </h2>
+            </div>
 
-            <p>
-                کارگردان، نویسنده، مستندساز، پژوهشگر و مدرس سینما
-            </p>
+            <div class="hero-portrait">
 
-            <a href="https://www.instagram.com/foroud.paknia/"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="instagram-link">
-                Instagram
-            </a>
+                <img
+                    src="hero.jpg.jpg"
+                    alt="فرود پاک‌نیا | Foroud Paknia"
+                >
 
-        </div>
-
-
-        <div class="hero-portrait">
-
-            <img
-                src="hero.jpg.jpg"
-                alt="فرود پاک‌نیا | Foroud Paknia"
-            >
+            </div>
 
         </div>
 
-
-    </div>
-
-
-</section>
-
+    </section>
 
 </main>
 
-
 <!-- شمارنده مجموع بازدیدهای سایت -->
 
-<div id="site-visit-counter"
-     style="
-        direction: rtl;
-        text-align: center;
-        margin: 30px auto;
-        padding: 14px 22px;
-        width: fit-content;
-        max-width: calc(100% - 40px);
-        color: #d4af37;
-        background: #111;
-        border: 1px solid #d4af37;
-        border-radius: 8px;
-        font-size: 14px;
-     ">
+<div id="site-visit-counter">
 
     مجموع بازدیدهای سایت:
 
-    <strong id="site-total-visits"
-            style="color: #ffffff; margin-right: 8px;">
-        در حال دریافت...
-    </strong>
-
-</div>
-
-
-<script>
-
-(function () {
-
-    var target = document.getElementById('site-total-visits');
-
-    var attempts = 0;
-
-    var timer = setInterval(function () {
-
-        attempts++;
-
-        if (window.goatcounter && window.goatcounter.visit_count) {
-
-            clearInterval(timer);
-
-            target.textContent = '';
-
-            window.goatcounter.visit_count({
-
-                append: '#site-total-visits',
-
-                path: 'TOTAL'
-
-            });
-
-        }
-
-        if (attempts >= 50) {
-
-            clearInterval(timer);
-
-            if (target.textContent === 'در حال دریافت...') {
-                target.textContent = '—';
-            }
-
-        }
-
-    }, 100);
-
-})();
-
-</script>
-
-
-</body>
-<div id="site-visit-counter"
-     style="direction:rtl; text-align:center; margin:30px auto;
-            padding:14px 22px; width:fit-content;
-            color:#d4af37; background:#111;
-            border:1px solid #d4af37; border-radius:8px;">
-
-    مجموع بازدیدهای سایت:
-    <span id="site-total-visits" style="color:white; margin-right:8px;">
+    <span id="site-total-visits">
         در حال دریافت...
     </span>
+
 </div>
+
+<!-- دریافت مجموع بازدیدها از GoatCounter -->
 
 <script>
 (function () {
+
     var target = document.getElementById('site-total-visits');
     var attempts = 0;
 
     var timer = setInterval(function () {
+
         attempts++;
 
-        if (window.goatcounter && window.goatcounter.visit_count) {
+        if (window.goatcounter &&
+            window.goatcounter.visit_count) {
+
             clearInterval(timer);
 
             window.goatcounter.visit_count({
+
                 append: '#site-total-visits',
+
                 path: 'TOTAL'
+
             });
         }
 
         if (attempts >= 50) {
+
             clearInterval(timer);
+
             if (target.textContent.trim() === 'در حال دریافت...') {
                 target.textContent = 'خطا در دریافت';
             }
+
         }
+
     }, 100);
+
 })();
 </script>
+
+</body>
 </html>
