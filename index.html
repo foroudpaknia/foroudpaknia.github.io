@@ -61,7 +61,7 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- GoatCounter: آمارگیری بازدیدها -->
+    <!-- GoatCounter: ثبت نامرئی آمار بازدیدها -->
 
     <script
         data-goatcounter="https://foroudpaknia.goatcounter.com/count"
@@ -115,40 +115,6 @@
         ]
     }
     </script>
-
-    <!-- استایل شمارنده‌ها -->
-
-    <style>
-
-        #site-visit-counter,
-        #site-period-stats {
-            direction: rtl;
-            text-align: center;
-            margin: 20px auto;
-            padding: 14px 22px;
-            width: fit-content;
-            max-width: calc(100% - 40px);
-            color: #d4af37;
-            background: #111;
-            border: 1px solid #d4af37;
-            border-radius: 8px;
-            font-size: 14px;
-            line-height: 2;
-        }
-
-        #site-total-visits,
-        #site-period-stats strong {
-            color: #ffffff;
-            font-weight: bold;
-        }
-
-        #site-period-stats small {
-            display: block;
-            color: #d4af37;
-            margin-top: 5px;
-        }
-
-    </style>
 
 </head>
 
@@ -265,127 +231,6 @@
     </section>
 
 </main>
-
-<!-- آمار بازدید روزانه و ماهانه -->
-
-<div id="site-period-stats" aria-live="polite">
-
-    <div>
-        بازدید امروز:
-        <strong id="site-today-visits">در حال دریافت...</strong>
-    </div>
-
-    <div>
-        بازدید این ماه:
-        <strong id="site-month-visits">در حال دریافت...</strong>
-    </div>
-
-    <small id="site-stats-date"></small>
-
-</div>
-
-<!-- شمارنده مجموع بازدیدهای سایت -->
-
-<div id="site-visit-counter">
-
-    مجموع بازدیدهای سایت:
-
-    <span id="site-total-visits">
-        در حال دریافت...
-    </span>
-
-</div>
-
-<!-- دریافت آمار روزانه و ماهانه از Cloudflare Worker -->
-
-<script>
-
-(async function () {
-
-    const today = document.getElementById('site-today-visits');
-    const month = document.getElementById('site-month-visits');
-    const date = document.getElementById('site-stats-date');
-
-    try {
-
-        const response = await fetch(
-            'https://delicate-sky-dbde.foroudpaknia.workers.dev/api/stats?calendar=fa'
-        );
-
-        if (!response.ok) {
-            throw new Error('خطا در دریافت آمار');
-        }
-
-        const stats = await response.json();
-
-        today.textContent =
-            Number(stats.today).toLocaleString('fa-IR') + ' بازدید';
-
-        month.textContent =
-            Number(stats.month).toLocaleString('fa-IR') + ' بازدید';
-
-        date.textContent =
-            stats.todayLabel + ' | ماه ' + stats.monthLabel;
-
-    } catch (error) {
-
-        today.textContent = 'در دسترس نیست';
-        month.textContent = 'در دسترس نیست';
-
-        date.textContent =
-            'لطفاً بعداً دوباره تلاش کنید.';
-
-        console.error('Stats error:', error);
-
-    }
-
-})();
-
-</script>
-
-<!-- دریافت مجموع بازدیدها از GoatCounter -->
-
-<script>
-
-(function () {
-
-    var target = document.getElementById('site-total-visits');
-    var attempts = 0;
-
-    var timer = setInterval(function () {
-
-        attempts++;
-
-        if (window.goatcounter &&
-            window.goatcounter.visit_count) {
-
-            clearInterval(timer);
-
-            window.goatcounter.visit_count({
-
-                append: '#site-total-visits',
-
-                path: 'TOTAL'
-
-            });
-
-        }
-
-        if (attempts >= 50) {
-
-            clearInterval(timer);
-
-            if (target.textContent.trim() === 'در حال دریافت...') {
-                target.textContent = 'خطا در دریافت';
-            }
-
-        }
-
-    }, 100);
-
-})();
-
-</script>
 
 </body>
 </html>
